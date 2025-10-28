@@ -1,35 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <link rel="manifest" href="manifest.json" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="icons/icon-192.png">
-  <title>Velvet</title>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velvet Offline</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      flex-direction: column;
+      text-align: center;
+    }
+    img {
+      max-width: 90%;
+      height: auto;
+      margin-bottom: 20px;
+      opacity: 0;
+      animation: fadeIn 2s ease-in forwards;
+    }
+    p {
+      font-size: 1rem;
+      color: #ccc;
+      opacity: 0;
+      animation: fadeIn 3s ease-in forwards;
+      animation-delay: 1s;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  </style>
 </head>
 <body>
-<header><h1>Velvet</h1></header>
-
-  <main id="app">
-   <form id="taskForm">
-  <input id="taskInput" placeholder="Title..." required />
-  <textarea id="descInput" placeholder="Description..."></textarea>
-
-  <select id="typeSelect">
-	<option value="">-- Select A Type --</option>
-    <option value="idea">Idea/Thought</option>
-    <option value="watch">Movie or TV Show</option>
-    <option value="buy">Need to Purchase</option>
-    <option value="todo">To-Do</option>
-	<option value="talk">Lets talk about this</option>
-  </select>
-
-  <button type="submit">Add</button>
-    </form>
-  </main>
-
-  <script src="app.js"></script>
+  <img src="assets/offline.png" alt="Velvet Offline">
+  <p>Velvet is offline.<br>We’re sorry for the silence.<br>I’m sure we will cross paths again.</p>
 </body>
 </html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="icons/icon-192.png">
+  <title>Velvet</title>
+
+</head>
+<body>
+<header><h1>Velvet</h1></header>
+
+  <main id="app">
+   <form id="taskForm">
+  <input id="taskInput" placeholder="Title..." required />
+  <textarea id="descInput" placeholder="Description..."></textarea>
+
+  <select id="typeSelect">
+	<option value="">-- Select A Type --</option>
+    <option value="idea">Idea/Thought</option>
+    <option value="watch">Movie or TV Show</option>
+    <option value="buy">Need to Purchase</option>
+    <option value="todo">To-Do</option>
+	<option value="talk">Lets talk about this</option>
+  </select>
+
+  <button type="submit">Add</button>
+    </form>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

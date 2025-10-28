@@ -1,0 +1,62 @@
+:root {
+  font-family: system-ui, sans-serif;
+  color-scheme: light dark;
+}
+
+body {
+  margin: 0;
+  background: #f5f5f5;
+  font-family: system-ui, sans-serif;
+}
+
+main {
+  max-width: 480px;
+  margin: 0 auto;          /* centers horizontally */
+  padding: 1.5rem;         /* even space on both sides */
+  box-sizing: border-box;  /* ensures padding counted in width */
+}
+
+header {
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+input,
+textarea,
+select,
+button {
+  font-size: 1rem;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+button {
+  background: #222;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* tighter cap on phones */
+@media (max-width: 600px) {
+  main { max-width: 520px; } /* optional; keeps edges off the glass */
+}
